@@ -3,20 +3,23 @@
     static void Main()
     {
         List<string> gala = new List<string>();
-        gala.Add("1-Bülent Ersoy");
-        gala.Add("2-Ajda Pekkan");
-        gala.Add("3-Ebru Gündeş");
-        gala.Add("4-Hadise");
-        gala.Add("5-Hande Yener");
-        gala.Add("6-Tarkan");
-        gala.Add("7-Funda Arar");
-        gala.Add("8-Demet Akalın");
+        gala.Add("Bülent Ersoy");
+        gala.Add("Ajda Pekkan");
+        gala.Add("Ebru Gündeş");
+        gala.Add("Hadise");
+        gala.Add("Hande Yener");
+        gala.Add("Tarkan");
+        gala.Add("Funda Arar");
+        gala.Add("Demet Akalın");
 
         Console.WriteLine("Patika Plus Galasına Hoşgeldiniz!");
         Console.WriteLine("**Davetliler**");
+        int i = 1;
         foreach (var kisiler in gala)
         {
-            Console.WriteLine(kisiler);
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine($"{i} - {kisiler}");
+            i++;
         }
 
     }
